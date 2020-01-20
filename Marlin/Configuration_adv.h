@@ -2022,16 +2022,16 @@
     #define Z3_CHAIN_POS     -1
   #endif
 
-  #if AXIS_IS_TMC(Z4)
-    #define Z4_CURRENT      800
-    #define Z4_CURRENT_HOME Z4_CURRENT
-    #define Z4_MICROSTEPS    16
-    #define Z4_RSENSE         0.11
-    #define Z4_CHAIN_POS     -1
-  #endif
+  // #if AXIS_IS_TMC(Z4)
+  //   #define Z4_CURRENT      800
+  //   #define Z4_CURRENT_HOME Z4_CURRENT
+  //   #define Z4_MICROSTEPS    16
+  //   #define Z4_RSENSE         0.11
+  //   #define Z4_CHAIN_POS     -1
+  // #endif
 
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT      900
+    #define E0_CURRENT      940
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1

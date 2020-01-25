@@ -1458,10 +1458,10 @@
  * See http://marlinfw.org/docs/features/lin_advance.html for full instructions.
  * Mention @Sebastianv650 on GitHub to alert the author of any issues.
  */
-//#define LIN_ADVANCE
+#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  #define LIN_ADVANCE_K 0.22    // Unit: mm compression per 1mm/s extruder speed
+  #define LIN_ADVANCE_K 0.05    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
 #endif
 
@@ -1498,10 +1498,10 @@
  * the probe to be unable to reach any points.
  */
 #if PROBE_SELECTED && !IS_KINEMATIC
-  #define MIN_PROBE_EDGE_LEFT 48
-  #define MIN_PROBE_EDGE_RIGHT (X_BED_SIZE - (MIN_PROBE_EDGE))
-  #define MIN_PROBE_EDGE_FRONT MIN_PROBE_EDGE
-  #define MIN_PROBE_EDGE_BACK (Y_BED_SIZE - (MIN_PROBE_EDGE))
+  // #define MIN_PROBE_EDGE_LEFT 48
+  // #define MIN_PROBE_EDGE_RIGHT (X_BED_SIZE - (MIN_PROBE_EDGE))
+  // #define MIN_PROBE_EDGE_FRONT MIN_PROBE_EDGE
+  // #define MIN_PROBE_EDGE_BACK (Y_BED_SIZE - (MIN_PROBE_EDGE))
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
